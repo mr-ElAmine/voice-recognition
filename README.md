@@ -1,5 +1,5 @@
 # Projet : Voice Recognition
-Ce projet est une application web de reconnaissance vocale qui permet aux utilisateurs de parler dans un microphone, d'enregistrer leur voix et de la transcrire en texte.
+Ce projet est une application web de reconnaissance vocale qui permet aux utilisateurs de parler dans un microphone, d'enregistrer leur voix et de la transcrire en texte. Pour avoir un aperçu de mon projet cliquez ici https://codepen.io/user-EhGp/pen/PodzdxK
 
 ### Technologies utilisées
 - HTML
