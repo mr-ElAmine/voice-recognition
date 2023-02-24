@@ -1,0 +1,107 @@
+/* By moi /*
+/* Réinitialisation des styles par défaut pour tous les éléments HTML */
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    
+/* Styles pour une barre de navigation */
+.nav{
+    display: flex; /* Utiliser flexbox pour aligner les éléments enfants */
+    justify-content: center; /* Centrer les éléments enfants horizontalement */
+    align-items: center; /* Centrer les éléments enfants verticalement */
+    width: 100%; /* Définir la largeur à 100% de l'élément parent */
+    background: #ffff; /* Définir la couleur de fond à blanc */
+}
+    
+/* Styles pour le conteneur principal */
+.container{
+    width: 80%; /* Largeur du conteneur à 80% de la largeur de la page */
+    max-width: 1200px; /* Définir la largeur maximale du conteneur */
+    margin: 0 auto; /* Centrer le conteneur horizontalement */
+    display: flex; /* Utilisation d'un affichage flexible pour le contenu */
+    align-items: center; /* Centrage vertical du contenu */
+    flex-direction: column; /* Orientation verticale du contenu */
+    gap: 2rem; /* Espacement vertical entre les éléments */
+    padding: 15px 25px; /* Espacement interne du conteneur */
+    border-radius: 10px; /* Arrondi des coins du conteneur */
+}
+    
+/* Styles pour la zone de texte */
+textarea{
+    padding: 12px 10px; /* Espacement interne */
+    width: 100%; /* Largeur de la zone de texte */
+    max-width: 800px; /* Définir la largeur maximale de la zone de texte */
+    resize: none; /* Désactivation du redimensionnement */
+    overflow: none; /* Désactivation de la barre de défilement */
+}
+    
+/* Styles pour la barre de défilement de la zone de texte */
+textarea::-webkit-scrollbar{
+    width: 10px; /* Largeur de la barre de défilement */
+}
+    
+/* Styles pour le pouce de la barre de défilement de la zone de texte */
+textarea::-webkit-scrollbar-thumb{
+    border-radius: 10px; /* Arrondi des coins du pouce */
+    background: rgb(134, 134, 134); /* Couleur du pouce */
+}
+    
+/* Styles pour la liste déroulante */
+select{
+    width: 100%; /* Largeur de la liste déroulante */
+    max-width: 800px; /* Définir la largeur maximale de la liste déroulante */
+    padding: .5rem; /* Espacement interne */
+}
+    
+/* Styles pour les boutons */
+button{
+    width: 100%; /* Largeur des boutons */
+    height: 2rem; /* Hauteur des boutons */
+    max-width: 200px; /* Définir la largeur maximale des boutons */
+}
+    
+/* Media Query pour les écrans de taille moyenne */
+@media (max-width: 768px) {
+    .container{
+        width: 90%; /* Largeur du conteneur à 90% de la largeur de la page */
+        padding: 10px; /* Espacement interne réduit */
+    }
+    
+textarea{
+        width: 100%; /* Largeur de la zone de texte à 100% de la largeur du parent */
+    }
+    
+select{
+        width: 100%; /* Largeur de la liste déroulante à 100% de la largeur du parent */
+    }
+    
+button{
+        width: 30%; /* Largeur des boutons à 30% de la largeur du parent */
+        margin: 10px; /* Espacement entre les boutons */
+    }
+
+}
+
+/* Styles pour les écrans de grande taille (supérieurs à 768px de largeur) */
+@media screen and (min-width: 769px) {
+    .container{
+    width: 80%; /* Largeur du conteneur à 80% de la largeur de la page */
+    padding: 15px 25px; /* Espacement interne normal */
+    }
+textarea{
+        width: 70%; /* Largeur de la zone de texte à 70% de la largeur du parent */
+    }
+    
+select{
+        width: 70%; /* Largeur de la liste déroulante à 70% de la largeur du parent */
+    }
+    
+    button{
+        width: 20%; /* Largeur des boutons à 20% de la largeur du parent */
+        margin: 0 10px; /* Espacement horizontal entre les boutons */
+    }
+}    
